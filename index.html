@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simulasi GBFS vs Dijkstra</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Simulasi Pencarian Jalur (GBFS & Dijkstra)</h1>
+
+  <div class="controls">
+    <button onclick="runGBFS()">Jalankan GBFS</button>
+    <button onclick="runDijkstra()">Jalankan Dijkstra</button>
+    <button onclick="resetGrid()">Reset Grid</button>
+  </div>
+
+  <div id="stats">
+    <p><strong>Langkah:</strong> <span id="steps">0</span></p>
+    <p><strong>Waktu Eksekusi:</strong> <span id="time">0</span> ms</p>
+  </div>
+
+  <div id="grid"></div>
+
+  <!-- Tabel hasil perbandingan -->
+  <div id="comparison">
+    <h2>📊 Hasil Perbandingan Algoritma</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Algoritma</th>
+          <th>Langkah</th>
+          <th>Waktu (ms)</th>
+        </tr>
+      </thead>
+      <tbody id="compare-body">
+        <tr><td>GBFS</td><td>-</td><td>-</td></tr>
+        <tr><td>Dijkstra</td><td>-</td><td>-</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
